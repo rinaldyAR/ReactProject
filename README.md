@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Penerapan:
+1. dibangun menggunakan react CRA
+2. terdapat class dan function components
+3. terdapat composing, extraction, lifting stateup
+4. menggunakan hooks
+5. memiliki beberapa page
+6. terdapat form
+
+Minus:
+1. Penerapan state management (redux) tidak diimplementasikan
+2. unit testing tidak diimplementasikan
+
+
 ## Available Scripts
 
 In the project directory, you can run:
