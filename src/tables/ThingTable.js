@@ -56,7 +56,7 @@ const ThingTable = (props) => {
                 onChange={(e)=> handleQuantityChange(thing,e)}
               />
             </td>
-            <td><CountTotal price={thing.price} quantity={thing.quantity}></CountTotal></td>
+            <td>Rp. <CountTotal price={thing.price} quantity={thing.quantity}></CountTotal></td>
             <td>
               <button
                 onClick={() => props.deleteThing(thing.id)}
