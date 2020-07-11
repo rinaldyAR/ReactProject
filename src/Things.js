@@ -7,7 +7,7 @@ const Things = () => {
   const thingsData = [
     { id: 1, name: 'Teh Bulat', price: 2000, quantity: 8 },
     { id: 2, name: 'Teh Segitiga', price: 3000, quantity: 2 },
-    { id: 3, name: 'Teh Segilima', price: 5000, quantity: 6 },
+    { id: 3, name: 'Teh Persegi', price: 5000, quantity: 6 },
   ]
 
   const [things, setThings] = useState(thingsData)
@@ -34,13 +34,14 @@ const Things = () => {
     setEditing(false)
   
     setThings(things.map((thing) => (thing.id === id ? updatedThing: thing)))
+    console.log(things)
   }
 
   return (
     <div className="container">
       <h1>Pencatatan Pembelian Barang</h1>
-      <div class="flex-row">
-      <div class="flex-large one-third">
+      <div className="flex-row">
+      <div className="flex-large one-third">
         {editing ? (
           <div>
             <h2>Edit Barang</h2>
@@ -57,7 +58,7 @@ const Things = () => {
           </div>
         )}
       </div>
-        <div class="flex-large two-third">
+        <div className="flex-large two-third">
           <h2>List Barang</h2>
           <ThingTable things={things} deleteThing={deleteThing}
                updateThing={updateThing}/>
